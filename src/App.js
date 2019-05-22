@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import LanguageSelect from "./components/LanguageSelect";
+import { I18nContext } from './i18n';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  const { translate } = useContext(I18nContext);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <LanguageSelect />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {translate('edit_and_save')}
         </p>
         <a
           className="App-link"
@@ -16,7 +20,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {translate('learn_react')}
         </a>
       </header>
     </div>

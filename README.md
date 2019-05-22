@@ -1,3 +1,9 @@
+## i18n
+
+Fully functional repo based on [Article: Internationalization with React Hooks](https://blog.usejournal.com/internationalization-with-react-hooks-af37bed9f195)
+
+## Create React App README
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
